@@ -1,4 +1,4 @@
-These are solutions to solved leetcode problems.
+These are my own solutions to solved leetcode problems.
 
 The posted solutions are for the following problems:
    1. Two Sum
@@ -16,3 +16,4 @@ The posted solutions are for the following problems:
    169. Majority Element
    206. Reverse Linked List
    226. Invert Binary Tree
+   118. Pascal's Triangle
