@@ -15,3 +15,4 @@ The posted solutions are for the following problems:
    160. Intersection of Two Linked Lists
    169. Majority Element
    206. Reverse Linked List
+   226. Invert Binary Tree
