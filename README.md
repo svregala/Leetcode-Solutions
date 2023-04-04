@@ -1,6 +1,8 @@
 These are my own solutions to solved leetcode problems.
 
 The posted solutions are for the following problems:
+
+   **EASY Difficulty**
    1. Two Sum
    20. Valid Parentheses
    21. Merge Two Sorted Lists
@@ -19,3 +21,8 @@ The posted solutions are for the following problems:
    118. Pascal's Triangle
    876. Middle of Linked List
    234. Palindrome Linked List
+   283. Move Zeroes
+
+   **MEDIUM Difficulty**
+
+   **Hard Difficulty**
