@@ -25,4 +25,4 @@ The posted solutions are for the following problems:
 
    **MEDIUM Difficulty**
 
-   **Hard Difficulty**
+   **HARD Difficulty**
