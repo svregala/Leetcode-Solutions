@@ -3,25 +3,25 @@ These are my own solutions to solved leetcode problems.
 The posted solutions are for the following problems:
 
    **EASY Difficulty**
-   1. Two Sum
-   20. Valid Parentheses
-   21. Merge Two Sorted Lists
-   35. Search Insert Position
-   70. Climbing Stairs
-   94. Binary Tree Inorder Traversal
-   101. Symmetric Tree
-   104. Maximum Depth of Binary Tree
-   121. Best Time to Buy and Sell Stock
-   136. Single Number
-   141. Linked List Cycle
-   160. Intersection of Two Linked Lists
-   169. Majority Element
-   206. Reverse Linked List
-   226. Invert Binary Tree
-   118. Pascal's Triangle
-   876. Middle of Linked List
-   234. Palindrome Linked List
-   283. Move Zeroes
+   1. Two Sum - Problem #1
+   2. Valid Parentheses - Problem #20
+   3. Merge Two Sorted Lists - Problem #21
+   4. Search Insert Position - Problem #35
+   5. Climbing Stairs - Problem #70
+   6. Binary Tree Inorder Traversal - Problem #94
+   7. Symmetric Tree - Problem #101
+   8. Maximum Depth of Binary Tree - Problem #104
+   9. Best Time to Buy and Sell Stock - Problem #121
+   10. Single Number - Problem #136
+   11. Linked List Cycle - Problem #141
+   12. Intersection of Two Linked Lists - Problem #160
+   13. Majority Element - Problem #169
+   14. Reverse Linked List - Problem #206
+   15. Invert Binary Tree - Problem #226
+   16. Pascal's Triangle - Problem #118
+   17. Middle of Linked List - Problem #876
+   18. Palindrome Linked List - Problem #234
+   19. Move Zeroes - Problem #283
 
    **MEDIUM Difficulty**
 
