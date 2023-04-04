@@ -22,6 +22,7 @@ The posted solutions are for the following problems:
    17. Middle of Linked List - Problem #876
    18. Palindrome Linked List - Problem #234
    19. Move Zeroes - Problem #283
+   20. Diameter of Binary Tree - Problem #543
 
    **MEDIUM Difficulty**
 
