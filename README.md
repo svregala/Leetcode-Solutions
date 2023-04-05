@@ -25,5 +25,6 @@ The posted solutions are for the following problems:
    20. Diameter of Binary Tree - Problem #543
 
    **MEDIUM Difficulty**
+   1. Add Two Numbers - Problem #2
 
    **HARD Difficulty**
