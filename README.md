@@ -2,7 +2,7 @@ These are my own solutions to solved leetcode problems.
 
 The posted solutions are for the following problems:
 
-   **EASY Difficulty**
+   **EASY Difficulty ---**
    1. Two Sum - Problem #1
    2. Valid Parentheses - Problem #20
    3. Merge Two Sorted Lists - Problem #21
@@ -24,7 +24,7 @@ The posted solutions are for the following problems:
    19. Move Zeroes - Problem #283
    20. Diameter of Binary Tree - Problem #543
 
-   **MEDIUM Difficulty**
+   **MEDIUM Difficulty ---**
    1. Add Two Numbers - Problem #2
 
-   **HARD Difficulty**
+   **HARD Difficulty ---**
