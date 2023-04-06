@@ -26,5 +26,6 @@ The posted solutions are for the following problems:
 
    **MEDIUM Difficulty ---**
    1. Add Two Numbers - Problem #2
+   2. Longest Substring Without Repeating Characters - Problem #3
 
    **HARD Difficulty ---**
