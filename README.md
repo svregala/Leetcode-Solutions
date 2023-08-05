@@ -23,6 +23,8 @@ The posted solutions are for the following problems:
    18. Palindrome Linked List - Problem #234
    19. Move Zeroes - Problem #283
    20. Diameter of Binary Tree - Problem #543
+   21. Longest Common Prefix - Problem #14
+   22. Palindrome Number - Problem #9
 
    **MEDIUM Difficulty ---**
    1. Add Two Numbers - Problem #2
