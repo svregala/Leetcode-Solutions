@@ -26,6 +26,7 @@ The posted solutions are for the following problems:
    21. Longest Common Prefix - Problem #14
    22. Palindrome Number - Problem #9
    23. Remove Duplicates from Sorted Array #26
+   24. Remove Element #27
 
    **MEDIUM Difficulty ---**
    1. Add Two Numbers - Problem #2
