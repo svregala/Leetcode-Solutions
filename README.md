@@ -28,6 +28,7 @@ The posted solutions are for the following problems:
    23. Remove Duplicates from Sorted Array #26
    24. Remove Element #27
    25. Find the Index of the First Occurrence in a String #28
+   26. Length of the Last Word #58
 
    **MEDIUM Difficulty ---**
    1. Add Two Numbers - Problem #2
