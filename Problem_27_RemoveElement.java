@@ -3,24 +3,24 @@ Given an integer array nums and an integer val, remove all occurrences of val in
 Consider the number of elements in nums which are not equal to val be k, to get accepted, you need to do the following things:
 Change the array nums such that the first k elements of nums contain the elements which are not equal to val. The remaining elements of nums are not important as well as the size of nums.
 Return k.
- */
+*/
 
 
 class Solution {
-    public int removeElement(int[] nums, int val) {
-        // Base case
-        /*if(nums.length == 0){
-            return nums.length;
-        }*/
+   public int removeElement(int[] nums, int val) {
+      // Base case
+      /*if(nums.length == 0){
+         return nums.length;
+      }*/
 
-        int k=0;
-        for(int i=0; i<nums.length; i++){
-            if(nums[i] != val){
-                nums[k] = nums[i];
-                k++;
-            }
-        }
+      int k=0;
+      for(int i=0; i<nums.length; i++){
+         if(nums[i] != val){
+               nums[k] = nums[i];
+               k++;
+         }
+      }
 
-        return k;
-    }
+      return k;
+   }
 }
