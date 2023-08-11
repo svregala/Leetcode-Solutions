@@ -29,6 +29,7 @@ The posted solutions are for the following problems:
    24. Remove Element #27
    25. Find the Index of the First Occurrence in a String #28
    26. Length of the Last Word #58
+   27. Plus One #66
 
    **MEDIUM Difficulty ---**
    1. Add Two Numbers - Problem #2
