@@ -31,6 +31,7 @@ The posted solutions are for the following problems:
    26. Length of the Last Word #58
    27. Plus One #66
    28. Add Binary #67
+   29. Remove Duplicates from Sorted List #83
 
    **MEDIUM Difficulty ---**
    1. Add Two Numbers - Problem #2
