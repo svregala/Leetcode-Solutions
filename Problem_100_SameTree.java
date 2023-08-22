@@ -20,17 +20,13 @@ Two binary trees are considered the same if they are structurally identical, and
  */
 class Solution {
     // Global variable that will change constantly
-    boolean res_null = true;
-    int res_val = 0;
+    boolean res = true;
     public boolean isSameTree(TreeNode p, TreeNode q) {
         if(p==null && q==null){
             return true;
         }
         sameTreeHelper(p, q);
-        if(res_val>0){
-            return false;
-        }
-        return res_null;
+        return res;
     }
 
     // helper function (recursion) to assign a value to res
@@ -39,17 +35,17 @@ class Solution {
             return;
         }
         else if(a==null && b!=null){
-            res_null=false;
+            res=false;
             return;
         }
         else if(a!=null && b==null){
-            res_null=false;
+            res=false;
             return;
         }
         // a and b are NOT null
         else{
             if(a.val != b.val){
-                res_val++;
+                res=false;
             }
         }
 

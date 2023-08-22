@@ -18,29 +18,25 @@ Given the root of a binary tree, check whether it is a mirror of itself (i.e., s
  * }
  */
 class Solution {
-   boolean retVal = true;
-   public boolean isSymmetric(TreeNode root) {
-       if(root.right==null && root.left==null){
-           return true;
-       }
-       compare(root.left, root.right);
-       return retVal;
-   }
-   
-   private void compare(TreeNode one, TreeNode two){
-       if(one==null && two==null){
-           return;
-       }
-       if(one==null || two==null){
-           retVal = false;
-           return;
-       }
-       if(one.val != two.val){
-           retVal = false;
-           return;
-       }
-       
-       compare(one.left, two.right);
-       compare(one.right, two.left);
-   }
+    boolean res = true;
+    public boolean isSymmetric(TreeNode root) {
+        if(root.left==null && root.right==null){
+            return true;
+        }
+        isSymHelper(root.left, root.right);
+        return res;
+    }
+
+    private void isSymHelper(TreeNode a, TreeNode b){
+        if(a==null && b==null){
+            return;
+        }
+        else if((a==null && b!=null) || (a!=null && b==null) || (a.val != b.val)){
+            res = false;
+            return;
+        }
+
+        isSymHelper(a.left, b.right);
+        isSymHelper(a.right, b.left);
+    }
 }
