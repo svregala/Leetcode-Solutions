@@ -34,6 +34,7 @@ The posted solutions are for the following problems:
    29. Remove Duplicates from Sorted List #83
    30. Sqrt(x) #69
    31. Merge Sorted Array #88
+   32. Same Tree #100
 
    **MEDIUM Difficulty ---**
    1. Add Two Numbers - Problem #2
