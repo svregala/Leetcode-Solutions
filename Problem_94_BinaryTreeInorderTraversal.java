@@ -18,18 +18,19 @@ Given the root of a binary tree, return the inorder traversal of its nodes' valu
  * }
  */
 class Solution {
-   public List<Integer> inorderTraversal(TreeNode root) {
-       ArrayList<Integer> result = new ArrayList<>();
-       Inorder(root, result);
-       return result;
-   }
-   
-   private void Inorder(TreeNode node, ArrayList<Integer> array){
-       if(node == null){
-           return;
-       }
-       Inorder(node.left, array);
-       array.add(node.val);
-       Inorder(node.right, array);
-   }
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> result = new ArrayList<>();
+        inorderTravHelper(root,result);
+        return result;
+    }
+
+    private void inorderTravHelper(TreeNode node, List<Integer> list){
+        if(node == null){
+            return;
+        }
+
+        inorderTravHelper(node.left, list);
+        list.add(node.val);
+        inorderTravHelper(node.right,list);
+    }
 }
