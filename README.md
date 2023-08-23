@@ -35,6 +35,7 @@ The posted solutions are for the following problems:
    30. Sqrt(x) #69
    31. Merge Sorted Array #88
    32. Same Tree #100
+   33. Convert Sorted Array to Binary Search Tree #108
 
    **MEDIUM Difficulty ---**
    1. Add Two Numbers - Problem #2
