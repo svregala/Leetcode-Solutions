@@ -37,6 +37,7 @@ The posted solutions are for the following problems:
    32. Same Tree #100
    33. Convert Sorted Array to Binary Search Tree #108
    34. Balanced Binary Tree #110
+   35. Minimum Depth of Binary Tree #111
 
    **MEDIUM Difficulty ---**
    1. Add Two Numbers - Problem #2
