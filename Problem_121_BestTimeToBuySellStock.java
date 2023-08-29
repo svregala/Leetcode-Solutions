@@ -5,27 +5,33 @@ Return the maximum profit you can achieve from this transaction. If you cannot a
 */
 
 class Solution {
-   public int maxProfit(int[] prices) {
-       if(prices.length==1){
-           return 0;
-       }
-       
-       // two pointer problem
-       int left = 0;
-       int right = 1;
-       int max_prof = 0;
-       int temp_prof = 0;
-       
-       while(right < prices.length){
-           if(prices[left] < prices[right]){ // check if profitable
-               temp_prof = prices[right] - prices[left];
-               max_prof = Math.max(temp_prof, max_prof);
-           }else{  // we found a new left that's less than our current left
-               left = right;
-           }
-           right++;
-       }
-       
-       return max_prof;
-   }
+    public int maxProfit(int[] prices) {
+        // Base case
+        if(prices.length==1){
+            return 0;
+        }
+
+        // two pointer problem
+        int left = 0;
+        int right = 0;
+        int max = 0;
+        int temp_max = 0;
+
+        while(right<prices.length){
+            // check if profitable (i.e right-left > 0)
+            if(prices[left] < prices[right]){
+                temp_max = prices[right] - prices[left];
+                if(temp_max > max){
+                    max = temp_max;
+                }
+            }
+            // we found a NEW left that's less than our current left
+            else{
+                left = right;
+            }
+            right++;
+        }
+
+        return max;
+    }
 }

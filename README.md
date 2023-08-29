@@ -40,6 +40,7 @@ The posted solutions are for the following problems:
    35. Minimum Depth of Binary Tree #111
    36. Path Sum #112
    37. Pascal's Triangle II #119
+   38. Contains Duplicate #217
 
 
    **MEDIUM Difficulty ---**
