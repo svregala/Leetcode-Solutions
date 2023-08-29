@@ -2,26 +2,22 @@
 Given an integer numRows, return the first numRows of Pascal's triangle.
 */
 
-import java.util.ArrayList;
-
 class Solution {
-   public List<List<Integer>> generate(int numRows) {
+    public List<List<Integer>> generate(int numRows) {
+        List<List<Integer>> result = new ArrayList<>();
 
-       List<List<Integer>> result = new ArrayList<>();
-       for (int i=0; i<numRows; i++){
-
-           List<Integer> entry = new ArrayList<>();
-           for (int j=0; j<i+1; j++){
-               if(j==0 || j==i){
-                   entry.add(1);
-               }else{
-                   entry.add(result.get(i-1).get(j-1) + result.get(i-1).get(j));
-               }
-           }
-           result.add(entry);
-       }
-
-       return result;
-
-   }
+        for(int i=0; i<numRows; i++){
+            List<Integer> row = new ArrayList<>();
+            row.add(1);
+            for(int j=1; j<i; j++){
+                row.add(result.get(i-1).get(j) + result.get(i-1).get(j-1));
+            }
+            if(i>0){
+                row.add(1);
+            }
+            
+            result.add(row);
+        }
+        return result;
+    }
 }
