@@ -39,6 +39,7 @@ The posted solutions are for the following problems:
    34. Balanced Binary Tree #110
    35. Minimum Depth of Binary Tree #111
    36. Path Sum #112
+   37. Pascal's Triangle II #119
 
 
    **MEDIUM Difficulty ---**
