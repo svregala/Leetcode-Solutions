@@ -47,6 +47,8 @@ The posted solutions are for the following problems:
    1. Add Two Numbers - #2
    2. Longest Substring Without Repeating Characters - #3
    3. Product of Array Except Self - #238
-   4. Maximum Subarray #53
+   4. Maximum Subarray - #53
+   5. Maximum Product Subarray - #152
+   6. Find Minimum in Rotated Sorted Array - #153
 
    **HARD Difficulty ---**
