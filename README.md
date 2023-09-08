@@ -50,5 +50,7 @@ The posted solutions are for the following problems:
    4. Maximum Subarray - #53
    5. Maximum Product Subarray - #152
    6. Find Minimum in Rotated Sorted Array - #153
+   7. Search in Rotated Sorted Array - #33
+   8. 3Sum - #15
 
    **HARD Difficulty ---**
