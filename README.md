@@ -55,5 +55,7 @@ The posted solutions are for the following problems:
    9. Container With Most Water - #11
    10. Sum of Two Integers - #371
    11. Coin Change - #322
+   12. Longest Increasing Subsequence - #300
+   13. Longest Common Subsequence - #1143
 
    **HARD Difficulty ---**
