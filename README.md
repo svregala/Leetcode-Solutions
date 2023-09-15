@@ -57,5 +57,6 @@ The posted solutions are for the following problems:
    11. Coin Change - #322
    12. Longest Increasing Subsequence - #300
    13. Longest Common Subsequence - #1143
+   14. Word Break - #139
 
    **HARD Difficulty ---**

@@ -5,23 +5,34 @@ You can return the answer in any order.
 */
 
 class Solution {
-   public int[] twoSum(int[] nums, int target) {
-       int result[] = new int[2];
-       
-       if(nums.length == 2){
-           result[0] = 0;
-           result[1] = 1;
-       }
-       
-       for (int i=0; i<nums.length-1; i++){
-           for(int j=i+1; j<nums.length; j++){
-               if(nums[i]+nums[j]==target){
-                   result[0] = i;
-                   result[1] = j;
-               }
-           }
-       }
-       
-       return result;
-   }
+    public int[] twoSum(int[] nums, int target) {
+
+        HashMap<Integer, Integer> map = new HashMap<>();
+        int[] result = new int[2];
+
+        for(int i=0; i<nums.length; i++){
+            int diff = target - nums[i];
+            if(map.containsKey(diff)){
+                result[0] = i;
+                result[1] = map.get(diff);
+            }else{
+                map.put(nums[i], i);
+            }
+        }
+
+        return result;
+        // TC: O(n)
+        // SC: O(n)
+
+        // for each num in nums array, the number we are looking for is the DIFFERENCE between target and num
+        // e.g. nums = 2,1,5,3 and target=4
+        // say we're at element 1, the value we're looking for is the difference between the target and element 1
+        // --> 4-1 = 3 --> 3 is the only value we can add to 1 such that will equal the target, we don't have to
+        // check every number, we just want to see if 3 exists...
+        // the most efficient way to check if 3 exists is making a hashmap of every value in nums array, 
+        //  so we can instanly check if value 3 exists
+        // HASMAP: map each num to it's index in nums array
+        //    2:0, 1:1, 5:2, 3:3
+
+    }
 }
