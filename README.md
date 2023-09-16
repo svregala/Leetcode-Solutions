@@ -58,5 +58,6 @@ The posted solutions are for the following problems:
    12. Longest Increasing Subsequence - #300
    13. Longest Common Subsequence - #1143
    14. Word Break - #139
+   15. Combination Sum IV - #377
 
    **HARD Difficulty ---**
