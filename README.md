@@ -59,5 +59,6 @@ The posted solutions are for the following problems:
    13. Longest Common Subsequence - #1143
    14. Word Break - #139
    15. Combination Sum IV - #377
+   16. House Robber - #198
 
    **HARD Difficulty ---**
