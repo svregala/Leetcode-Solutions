@@ -60,5 +60,6 @@ The posted solutions are for the following problems:
    14. Word Break - #139
    15. Combination Sum IV - #377
    16. House Robber - #198
+   17. House Robber II - #213
 
    **HARD Difficulty ---**
