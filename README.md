@@ -62,5 +62,6 @@ The posted solutions are for the following problems:
    16. House Robber - #198
    17. House Robber II - #213
    18. Decode Ways - #91
+   19. Unique Paths - #62
 
    **HARD Difficulty ---**
