@@ -61,5 +61,6 @@ The posted solutions are for the following problems:
    15. Combination Sum IV - #377
    16. House Robber - #198
    17. House Robber II - #213
+   18. Decode Ways - #91
 
    **HARD Difficulty ---**
