@@ -29,6 +29,6 @@ class Solution {
          // i.e. moving all the way down or moving all the way right --> 1 path
       // fill up the table starting at the appropriate spot
          // for each cell the number of unique paths is the sum from the cell BELOW and the cell TO THE RIGHT (draw chart to help understand)
-         // return dp[0][0]
+         // return dp[0][0], dp[i][j] = dp[i][j+1] + dp[i+1][j]
    }
 }
