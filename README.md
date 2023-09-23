@@ -65,5 +65,6 @@ The posted solutions are for the following problems:
    19. Unique Paths - #62
    20. Jump Game - #55
    21. Clone Graph - #133
+   22. Course Schedule - #207
 
    **HARD Difficulty ---**
