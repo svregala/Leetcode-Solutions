@@ -93,3 +93,8 @@ class Solution {
 // example of detecting a loop (cycle)
     // using the set DS -- set will contain the courses that we're currently visiting along our DFS
         // during our visit of these nodes, when we visit a node that already exists in the set, then we detect a cycle
+
+// explain the problem using an example that would be untrue and true
+// TRUE: DFS, n=5 (i=0 to 4), prereq = [ [0,1], [0,2], [1,3], [1,4], [3,4] ] 
+// UNTRUE: DFS, n=3 (i=0 to 2), prereq = [ [0,1], [1,2], [2,0] ]
+// --> for both examples above, draw graph with arrows, draw map and set, explain algorithm
