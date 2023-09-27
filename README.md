@@ -66,5 +66,7 @@ The posted solutions are for the following problems:
    20. Jump Game - #55
    21. Clone Graph - #133
    22. Course Schedule - #207
+   23. Pacific Atlantic Water Flow - #417
+   24. Number of Islands - #200
 
    **HARD Difficulty ---**
