@@ -68,5 +68,6 @@ The posted solutions are for the following problems:
    22. Course Schedule - #207
    23. Pacific Atlantic Water Flow - #417
    24. Number of Islands - #200
+   25. Longest Consecutive Sequence - #128
 
    **HARD Difficulty ---**
