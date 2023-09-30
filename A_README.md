@@ -69,6 +69,6 @@ The posted solutions are for the following problems:
    23. Pacific Atlantic Water Flow - #417
    24. Number of Islands - #200
    25. Longest Consecutive Sequence - #128
-   26. Alien Dictionary - #269
 
    **HARD Difficulty ---**
+   26. Alien Dictionary - #269

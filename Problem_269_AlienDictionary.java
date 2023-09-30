@@ -78,6 +78,7 @@ class Solution{
 
       visit.put(c, false);
       result += c;
+      return false; // default boolean value to return
    }
 }
 
