@@ -71,4 +71,4 @@ The posted solutions are for the following problems:
    25. Longest Consecutive Sequence - #128
 
    **HARD Difficulty ---**
-   26. Alien Dictionary - #269
+   1. Alien Dictionary - #269
