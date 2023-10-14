@@ -9,7 +9,7 @@ class Solution{
    // map to keep track of visited nodes
    // for each character, map it to 2 values: FALSE=visited, TRUE=visited AND it's in current path
    // if character is NOT in the visit map at all, then it has not been visited at all
-   Map<Character> visit = new HashMap<>();
+   Map<Character, Boolean> visit = new HashMap<>();
    String result = "";
 
    public String alienOrder(String[] words) {
