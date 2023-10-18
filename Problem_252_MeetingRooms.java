@@ -13,11 +13,11 @@ import java.util.List;
  *       end = 0;
  *     }
  *     Interval(int start, int end) {
-*        this.start = start;
-*        this.end = end;
+ *       this.start = start;
+ *       this.end = end;
  *     }
  * }
- */
+*/
 
 
 class Solution {
