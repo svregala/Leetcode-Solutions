@@ -73,6 +73,8 @@ The posted solutions are for the following problems:
    27. Number of Connected Components in an Undirected Graph - #323
    28. Insert Interval - #57
    29. Merge Intervals - #56
+   30. Non-overlapping Intervals - #435
+   31. Meeting Rooms - #253
 
    **HARD Difficulty ---**
    1. Alien Dictionary - #269
