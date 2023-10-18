@@ -72,6 +72,7 @@ The posted solutions are for the following problems:
    26. Graph Valid Tree - #261
    27. Number of Connected Components in an Undirected Graph - #323
    28. Insert Interval - #57
+   29. Merge Intervals - #56
 
    **HARD Difficulty ---**
    1. Alien Dictionary - #269
