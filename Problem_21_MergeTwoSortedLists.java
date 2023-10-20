@@ -18,7 +18,7 @@ class Solution {
             return list1;
         }
 
-        // Main case
+        // assign the head of merged list
         ListNode head = null;
         if(list1.val <= list2.val){
             head = list1;
@@ -44,6 +44,7 @@ class Solution {
             }
         }
 
+        // attach the last elements
         if(list1 == null){
             curr.next = list2;
         }else if(list2 == null){

@@ -14,30 +14,35 @@ Given the head of a singly linked list, reverse the list, and return the reverse
  */
 
 class Solution {
-   public ListNode reverseList(ListNode head) {
-       if(head==null){
-           return null;
-       }
-       if(head.next==null){
-           return head;
-       }
-       
-       ListNode prev = head;
-       ListNode curr = head;
-       ListNode temp = head.next;
-       // take care of first element
-       curr.next = null;
-       curr = temp;
-       temp = temp.next;
-       curr.next = prev;
-       
-       while(temp!=null){
-           prev = curr;
-           curr = temp;
-           temp = temp.next;
-           curr.next = prev;
-       }
-       
-       return curr;
-   }
+    public ListNode reverseList(ListNode head) {
+        // base case
+        if(head==null){
+            return null;
+        }else if(head.next==null){
+            return head;
+        }
+
+        ListNode prev = head;
+        ListNode curr = head.next;
+        ListNode fut = head.next.next;
+        head.next = null;
+
+        while(curr != null){
+            // curr reached last element
+            if(fut == null){
+                curr.next = prev;
+                prev = curr;
+                curr = fut;
+
+                return prev;
+            }
+
+            curr.next = prev;
+            prev = curr;
+            curr = fut;
+            fut = fut.next;
+        }
+
+        return head;
+    }
 }
