@@ -77,6 +77,7 @@ The posted solutions are for the following problems:
    31. Meeting Rooms - #252
    32. Meeting Rooms II - #253
    33. Remove Nth Node From End of List - #19
+   34. Reorder List - #143
 
    **HARD Difficulty ---**
    1. Alien Dictionary - #269
