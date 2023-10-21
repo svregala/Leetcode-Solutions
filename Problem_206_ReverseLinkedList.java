@@ -22,27 +22,51 @@ class Solution {
             return head;
         }
 
-        ListNode prev = head;
-        ListNode curr = head.next;
-        ListNode fut = head.next.next;
-        head.next = null;
+        ListNode prev = null;
+        ListNode curr = head;
+        ListNode temp = null;
 
-        while(curr != null){
-            // curr reached last element
-            if(fut == null){
-                curr.next = prev;
-                prev = curr;
-                curr = fut;
+        while(curr!=null){
+            temp = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = temp;
+        }
 
-                return prev;
-            }
+        return prev;
+    }
+}
 
+/* Initial code
+public ListNode reverseList(ListNode head) {
+    // base case
+    if(head==null){
+        return null;
+    }else if(head.next==null){
+        return head;
+    }
+
+    ListNode prev = head;
+    ListNode curr = head.next;
+    ListNode fut = head.next.next;
+    head.next = null;
+
+    while(curr != null){
+        // curr reached last element
+        if(fut == null){
             curr.next = prev;
             prev = curr;
             curr = fut;
-            fut = fut.next;
+
+            return prev;
         }
 
-        return head;
+        curr.next = prev;
+        prev = curr;
+        curr = fut;
+        fut = fut.next;
     }
+
+    return head;
 }
+*/
