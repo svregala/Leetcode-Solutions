@@ -79,6 +79,7 @@ The posted solutions are for the following problems:
    33. Remove Nth Node From End of List - #19
    34. Reorder List - #143
    35. Set Matrix Zeroes - #73
+   36. Spiral Matrix = #54
 
    **HARD Difficulty ---**
    1. Alien Dictionary - #269
