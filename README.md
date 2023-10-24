@@ -80,6 +80,7 @@ The posted solutions are for the following problems:
    34. Reorder List - #143
    35. Set Matrix Zeroes - #73
    36. Spiral Matrix = #54
+   37. Rotate Image = #48
 
    **HARD Difficulty ---**
    1. Alien Dictionary - #269
