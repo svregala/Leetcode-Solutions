@@ -82,6 +82,7 @@ The posted solutions are for the following problems:
    36. Spiral Matrix - #54
    37. Rotate Image - #48
    38. Word Search - #79
+   39. Longest Repeating Character Replacement - #424
 
    **HARD Difficulty ---**
    1. Alien Dictionary - #269
