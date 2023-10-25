@@ -1,4 +1,4 @@
-These are my own solutions to solved leetcode problems.
+These are my own solutions to leetcode problems.
 
 The posted solutions are for the following problems:
 
@@ -41,6 +41,7 @@ The posted solutions are for the following problems:
    36. Path Sum - #112
    37. Pascal's Triangle II - #119
    38. Contains Duplicate - #217
+   39. Valid Anagram - #242
 
 
    **MEDIUM Difficulty ---**
@@ -84,5 +85,7 @@ The posted solutions are for the following problems:
    38. Word Search - #79
    39. Longest Repeating Character Replacement - #424
 
+
    **HARD Difficulty ---**
    1. Alien Dictionary - #269
+   2. Minimum Window Substring - #76

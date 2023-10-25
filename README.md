@@ -1,4 +1,4 @@
-These are my own solutions to solved leetcode problems.
+These are my own solutions to leetcode problems.
 
 The posted solutions are for the following problems:
 
@@ -41,6 +41,7 @@ The posted solutions are for the following problems:
    36. Path Sum - #112
    37. Pascal's Triangle II - #119
    38. Contains Duplicate - #217
+   39. Valid Anagram - #242
 
 
    **MEDIUM Difficulty ---**
@@ -75,7 +76,7 @@ The posted solutions are for the following problems:
    29. Merge Intervals - #56
    30. Non-overlapping Intervals - #435
    31. Meeting Rooms - #252
-   32. Meeting Rooms II -#253
+   32. Meeting Rooms II - #253
    33. Remove Nth Node From End of List - #19
    34. Reorder List - #143
    35. Set Matrix Zeroes - #73
@@ -84,5 +85,7 @@ The posted solutions are for the following problems:
    38. Word Search - #79
    39. Longest Repeating Character Replacement - #424
 
+
    **HARD Difficulty ---**
    1. Alien Dictionary - #269
+   2. Minimum Window Substring - #76
