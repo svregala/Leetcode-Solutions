@@ -6,50 +6,48 @@ An input string is valid if:
 - Every close bracket has a corresponding open bracket of the same type.
 */
 
-import java.util.Stack;
-
 class Solution {
-   public boolean isValid(String s) {
-       if(s.length()==1){
-           return false;
-       }
-       
-       Stack<Character> stack = new Stack<>();
-       for(int i=0; i<s.length(); i++){
-           if(s.charAt(i) == '(' || s.charAt(i) == '{' || s.charAt(i) == '['){
-               stack.push(s.charAt(i));
-           }
-           else if(s.charAt(i) == ')'){
-               if(stack.empty()){
-                   return false;
-               }
-               if(stack.peek() != '('){
-                   return false;
-               }
-               stack.pop();
-           }
-           else if(s.charAt(i) == '}'){
-               if(stack.empty()){
-                   return false;
-               }
-               if(stack.peek() != '{'){
-                   return false;
-               }
-               stack.pop();
-           }
-           else{
-               if(stack.empty()){
-                   return false;
-               }
-               if(stack.peek() != '['){
-                   return false;
-               }
-               stack.pop();
-           }
-       }
-       if(stack.empty()){
-           return true;
-       }
-       return false;
-   }
+    public boolean isValid(String s) {
+        // base case
+        if(s.length()==0){
+            return true;
+        }else if(s.length()==1){
+            return false;
+        }
+
+        Stack<Character> stack = new Stack<>();
+        for(char e : s.toCharArray()){
+            if(e=='(' || e=='{' || e=='['){
+                stack.push(e);
+            }
+            else if(stack.empty()){
+                return false;
+            }
+
+            if(e==')' && stack.peek()!='('){
+                return false;
+            }
+            else if(e=='}' && stack.peek()!='{'){
+                return false;
+            }
+            else if(e==']' && stack.peek()!='['){
+                return false;
+            }
+            
+            if(e==')' && stack.peek()=='('){
+                stack.pop();
+            }
+            else if(e=='}' && stack.peek()=='{'){
+                stack.pop();
+            }
+            else if(e==']' && stack.peek()=='['){
+                stack.pop();
+            }
+        }
+
+        if(stack.empty()){
+            return true;
+        }
+        return false;
+    }
 }

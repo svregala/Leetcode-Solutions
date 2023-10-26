@@ -42,6 +42,7 @@ The posted solutions are for the following problems:
    37. Pascal's Triangle II - #119
    38. Contains Duplicate - #217
    39. Valid Anagram - #242
+   40. Valid Palindrome - #125
 
 
    **MEDIUM Difficulty ---**
@@ -84,6 +85,7 @@ The posted solutions are for the following problems:
    37. Rotate Image - #48
    38. Word Search - #79
    39. Longest Repeating Character Replacement - #424
+   40. Group Anagrams - #49
 
 
    **HARD Difficulty ---**
