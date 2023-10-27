@@ -87,6 +87,8 @@ The posted solutions are for the following problems:
    39. Longest Repeating Character Replacement - #424
    40. Group Anagrams - #49
    41. Longest Palindromic Substring - #5
+   42. Palindromic Substrings - #647
+   43. Encode and Decode Strings - #271
 
 
    **HARD Difficulty ---**
