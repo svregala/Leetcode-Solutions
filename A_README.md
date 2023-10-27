@@ -86,6 +86,7 @@ The posted solutions are for the following problems:
    38. Word Search - #79
    39. Longest Repeating Character Replacement - #424
    40. Group Anagrams - #49
+   41. Longest Palindromic Substring - #5
 
 
    **HARD Difficulty ---**
