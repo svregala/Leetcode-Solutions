@@ -91,6 +91,10 @@ The posted solutions are for the following problems:
    42. Palindromic Substrings - #647
    43. Encode and Decode Strings - #271
    44. Binary Tree Level Order Traversal - #102
+   45. Construct Binary Tree from Preorder and Inorder Traversal - #105
+   46. Validate Binary Search Tree - #98
+   47. Kth Smallest Element in a BST - #230
+   48. Lowest Common Ancestor of a Binary Search Tree - #235
 
 
    **HARD Difficulty ---**
