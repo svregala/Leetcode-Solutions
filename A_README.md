@@ -43,6 +43,7 @@ The posted solutions are for the following problems:
    38. Contains Duplicate - #217
    39. Valid Anagram - #242
    40. Valid Palindrome - #125
+   41. Subtree of Another Tree - #572
 
 
    **MEDIUM Difficulty ---**
