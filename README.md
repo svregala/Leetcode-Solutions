@@ -95,6 +95,7 @@ The posted solutions are for the following problems:
    46. Validate Binary Search Tree - #98
    47. Kth Smallest Element in a BST - #230
    48. Lowest Common Ancestor of a Binary Search Tree - #235
+   49. Implement Trie (Prefix Tree) - #208
 
 
    **HARD Difficulty ---**
