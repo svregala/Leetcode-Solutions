@@ -16,10 +16,10 @@ class Solution {
 
       for(int i=0; i<ROW; i++){
          for(int j=0; j<COL; j++){
-               if(grid[i][j] == '1' && !visit.contains(Arrays.asList(i,j))){
-                  dfs(grid, i, j);
-                  count++;
-               }
+            if(grid[i][j] == '1' && !visit.contains(Arrays.asList(i,j))){
+               dfs(grid, i, j);
+               count++;
+            }
          }
       }
 
