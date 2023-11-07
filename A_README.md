@@ -104,3 +104,5 @@ The posted solutions are for the following problems:
    2. Minimum Window Substring - #76
    3. Binary Tree Maximum Path Sum - #124
    4. Serialize and Deserialize Binary Tree - #297
+   5. Word Search II - #212
+   6. Merge k Sorted Lists - #23
