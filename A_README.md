@@ -97,6 +97,7 @@ The posted solutions are for the following problems:
    48. Lowest Common Ancestor of a Binary Search Tree - #235
    49. Implement Trie (Prefix Tree) - #208
    50. Design Add and Search Words Data Structure - #211
+   51. Top K Frequent Elements - #347
 
 
    **HARD Difficulty ---**
