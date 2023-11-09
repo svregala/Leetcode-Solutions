@@ -107,3 +107,4 @@ The posted solutions are for the following problems:
    4. Serialize and Deserialize Binary Tree - #297
    5. Word Search II - #212
    6. Merge k Sorted Lists - #23
+   7. Find Median from Data Stream - #295
