@@ -6,21 +6,22 @@ You can return the answer in any order.
 
 class Solution {
     public int[] twoSum(int[] nums, int target) {
-
-        HashMap<Integer, Integer> map = new HashMap<>();
-        int[] result = new int[2];
+        int[] res = new int[2];
+        Map<Integer, Integer> map = new HashMap<>();
 
         for(int i=0; i<nums.length; i++){
-            int diff = target - nums[i];
-            if(map.containsKey(diff)){
-                result[0] = i;
-                result[1] = map.get(diff);
-            }else{
-                map.put(nums[i], i);
+            int left = target - nums[i];
+
+            if(map.containsKey(left)){
+                res[0] = map.get(left);
+                res[1] = i;
+                return res;
             }
+
+            map.put(nums[i], i);
         }
 
-        return result;
+        return res;
         // TC: O(n)
         // SC: O(n)
 
@@ -33,6 +34,5 @@ class Solution {
         //  so we can instanly check if value 3 exists
         // HASMAP: map each num to it's index in nums array
         //    2:0, 1:1, 5:2, 3:3
-
     }
 }
