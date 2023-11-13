@@ -22,17 +22,17 @@ class Solution {
         }
 
         return res;
-        // TC: O(n)
-        // SC: O(n)
-
-        // for each num in nums array, the number we are looking for is the DIFFERENCE between target and num
-        // e.g. nums = 2,1,5,3 and target=4
-        // say we're at element 1, the value we're looking for is the difference between the target and element 1
-        // --> 4-1 = 3 --> 3 is the only value we can add to 1 such that will equal the target, we don't have to
-        // check every number, we just want to see if 3 exists...
-        // the most efficient way to check if 3 exists is making a hashmap of every value in nums array, 
-        //  so we can instanly check if value 3 exists
-        // HASMAP: map each num to it's index in nums array
-        //    2:0, 1:1, 5:2, 3:3
     }
 }
+ // TC: O(n), n==nums size, iterating through whole map
+// SC: O(n), n==nums size, map has n elements, worst case is all numbers are distinct in nums array
+
+// for each num in nums array, the number we are looking for is the DIFFERENCE between target and num
+// e.g. nums = 2,1,5,3 and target=4
+// say we're at element 1, the value we're looking for is the difference between the target and element 1
+// --> 4-1 = 3 --> 3 is the only value we can add to 1 such that will equal the target, we don't have to
+// check every number, we just want to see if 3 exists...
+// the most efficient way to check if 3 exists is making a hashmap of every value in nums array, 
+//  so we can instanly check if value 3 exists
+// HASMAP: map each num to it's index in nums array
+//    2:0, 1:1, 5:2, 3:3
