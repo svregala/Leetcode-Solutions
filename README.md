@@ -44,6 +44,7 @@ The posted solutions are for the following problems:
    39. Valid Anagram - #242
    40. Valid Palindrome - #125
    41. Subtree of Another Tree - #572
+   42. Binary Search - #704
 
 
    **MEDIUM Difficulty ---**
