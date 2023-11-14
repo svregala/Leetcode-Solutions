@@ -9,45 +9,43 @@ An input string is valid if:
 class Solution {
     public boolean isValid(String s) {
         // base case
-        if(s.length()==0){
-            return true;
-        }else if(s.length()==1){
+        if(s.length()<2){
             return false;
         }
 
         Stack<Character> stack = new Stack<>();
-        for(char e : s.toCharArray()){
-            if(e=='(' || e=='{' || e=='['){
-                stack.push(e);
-            }
-            else if(stack.empty()){
-                return false;
-            }
+        for(int i=0; i<s.length(); i++){
+            char c = s.charAt(i);
 
-            if(e==')' && stack.peek()!='('){
-                return false;
+            if(c=='(' || c=='[' || c=='{'){
+                stack.push(c);
             }
-            else if(e=='}' && stack.peek()!='{'){
-                return false;
-            }
-            else if(e==']' && stack.peek()!='['){
-                return false;
-            }
-            
-            if(e==')' && stack.peek()=='('){
-                stack.pop();
-            }
-            else if(e=='}' && stack.peek()=='{'){
-                stack.pop();
-            }
-            else if(e==']' && stack.peek()=='['){
-                stack.pop();
+            else{
+                if(stack.empty()){
+                    return false;
+                }
+
+                if(c==')' && stack.peek()=='('){
+                    stack.pop();
+                }
+                else if(c==']' && stack.peek()=='['){
+                    stack.pop();
+                }
+                else if(c=='}' && stack.peek()=='{'){
+                    stack.pop();
+                }
+                else{
+                    return false;
+                }
             }
         }
 
-        if(stack.empty()){
-            return true;
+        if(!stack.empty()){
+            return false;
         }
-        return false;
+        return true;
     }
 }
+
+// TC: O(n), n is string size, iterating through whole string once
+// SC: o(n), n is string size, worst case is if string is only composed of '(', '[', and/or '{'
