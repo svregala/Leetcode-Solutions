@@ -16,57 +16,45 @@ Given the head of a singly linked list, reverse the list, and return the reverse
 class Solution {
     public ListNode reverseList(ListNode head) {
         // base case
-        if(head==null){
-            return null;
-        }else if(head.next==null){
+        if(head==null || head.next==null){
             return head;
         }
 
         ListNode prev = null;
         ListNode curr = head;
-        ListNode temp = null;
-
         while(curr!=null){
-            temp = curr.next;
+            head = head.next;
             curr.next = prev;
             prev = curr;
-            curr = temp;
+            curr = head;
         }
 
         return prev;
     }
 }
 
-/* Initial code
+// Iterative Solution:
+    // TC: O(n) with n==num nodes
+    // SC: O(1) constant space
+
+// Recursive Solution:
+    // TC: O(n) with n==num nodes
+    // SC: O(s) with s==number of times recursive call happens, worst case is size of list so O(n)
+/*
 public ListNode reverseList(ListNode head) {
     // base case
-    if(head==null){
-        return null;
-    }else if(head.next==null){
+    if(head==null || head.next==null){
         return head;
     }
+    return revHelper(head, null);
+}
 
-    ListNode prev = head;
-    ListNode curr = head.next;
-    ListNode fut = head.next.next;
-    head.next = null;
-
-    while(curr != null){
-        // curr reached last element
-        if(fut == null){
-            curr.next = prev;
-            prev = curr;
-            curr = fut;
-
-            return prev;
-        }
-
-        curr.next = prev;
-        prev = curr;
-        curr = fut;
-        fut = fut.next;
+private ListNode revHelper(ListNode node, ListNode prev){
+    if(node==null){
+        return prev;
     }
-
-    return head;
+    ListNode temp = node.next;
+    node.next = prev;
+    return revHelper(temp, node);
 }
 */
