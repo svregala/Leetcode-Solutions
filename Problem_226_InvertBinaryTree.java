@@ -19,48 +19,27 @@ Given the root of a binary tree, invert the tree, and return its root.
  */
 class Solution {
     public TreeNode invertTree(TreeNode root) {
-        // base case
-        if(root == null){
+        if(root==null){
             return root;
         }
-
-        helper(root);
+        dfs(root);
         return root;
     }
 
-    private void helper(TreeNode node){
+    private void dfs(TreeNode node){
         if(node==null){
             return;
         }
 
-        TreeNode temp = node.left;
+        TreeNode swap = node.left;
         node.left = node.right;
-        node.right = temp;
+        node.right = swap;
 
-        helper(node.left);
-        helper(node.right);
+        dfs(node.left);
+        dfs(node.right);
     }
 }
-// TC: O(n) with n==num nodes
-
-
-/* OLD SOLUTION
-class Solution {
-   public TreeNode invertTree(TreeNode root) {
-       helper(root);
-       return root;
-   }
-   public void helper(TreeNode root){
-       if(root == null){
-           return;
-       }
-       TreeNode holder = root.left;
-       root.left = root.right;
-       root.right = holder;
-       helper(root.left);
-       helper(root.right);
-       return;
-   }
-
-}
-*/
+// TC: O(n), n==num nodes, iterating through all nodes
+// SC: O(h), where h is the height of the binary tree
+    // function uses dfs approach to traverse the binary tree recursively. 
+    // worst case, max number of function calls that will be stored on the call stack is equal to the height of the tree
