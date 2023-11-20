@@ -21,32 +21,36 @@ The length of a path between two nodes is represented by the number of edges bet
  * }
  */
 class Solution {
-   public int diameterOfBinaryTree(TreeNode root) {
-       // Create an array to hold the diameter of the tree
-       // need to recursively edit the len array
-       int len[] = new int[1];
+    int max=0;
+    public int diameterOfBinaryTree(TreeNode root) {
+        // base case
+        if(root==null){
+            return 0;
+        }
 
-       // Recursively calculate the height of the tree and update the diameter array
-       diamHelper(root, len);
+        dfs(root);
+        return max;
+    }
 
-       // return diameter of tree
-       return len[0];
-   }
+    private int dfs(TreeNode node){
+        // height is 0
+        if(node==null){
+            return 0;
+        }
 
-   public int diamHelper(TreeNode node, int[] len){
-       // Base case: if the root is null, the height is 0
-       if(node==null){
-           return 0;
-       }
+        int l = dfs(node.left);
+        int r = dfs(node.right);
 
-       int left = diamHelper(node.left, len);
-       int right = diamHelper(node.right, len);
-
-       // Update diameter array by taking the maximum diameter that passes through the current node
-       len[0] = Math.max(len[0], left+right);
-
-       // Return maximum depth of the current node by adding 1 to the maximum depth of its deepest subtree
-       return Math.max(left,right)+1;
-   }
-
+        // update max by taking the max diameter that passes through current node
+        max = Math.max(max, l+r);
+        return Math.max(l,r) + 1;
+        // return max depth of current node by adding 1 to max depth of deepest subtree
+    }
 }
+
+// TC: O(n), with n==num nodes -- iterating through all nodes once
+// SC: O(h), with h==height of binary tree
+
+// recursively go down the left subtree, then the right subtree
+    // update max to max of current max and left+right
+    // return max of l and r plus 1
