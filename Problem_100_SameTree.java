@@ -33,44 +33,7 @@ class Solution {
         return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
     }
 }
-// recursive DFS call, TC: O(n) with n=num nodes
 
-
-
-/* OLD SOLUTION
-class Solution {
-    // Global variable that will change constantly
-    boolean res = true;
-    public boolean isSameTree(TreeNode p, TreeNode q) {
-        if(p==null && q==null){
-            return true;
-        }
-        sameTreeHelper(p, q);
-        return res;
-    }
-
-    // helper function (recursion) to assign a value to res
-    private void sameTreeHelper(TreeNode a, TreeNode b){
-        if(a==null && b==null){
-            return;
-        }
-        else if(a==null && b!=null){
-            res=false;
-            return;
-        }
-        else if(a!=null && b==null){
-            res=false;
-            return;
-        }
-        // a and b are NOT null
-        else{
-            if(a.val != b.val){
-                res=false;
-            }
-        }
-
-        sameTreeHelper(a.left, b.left);
-        sameTreeHelper(a.right, b.right);
-    }
-}
-*/
+// TC: O(n), n==max(p tree size, q tree size), visiting n nodes at most once
+// SC: O(h), with h==height of binary tree
+    // worst case is max number of function calls stored on call stack is equal to height of tree
