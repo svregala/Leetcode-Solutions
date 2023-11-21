@@ -18,42 +18,32 @@ Given a binary tree, determine if it is height-balanced.
  * }
  */
 class Solution {
+    boolean bal = true;
     public boolean isBalanced(TreeNode root) {
-        // Base case, if roots is empty or if it's only 1 element
-        if(root == null || (root.left==null && root.right == null)){
-            return true;
-        }
-
-        // return -1 when tree is unbalanced
-        if(helper(root)==-1){
-            return false;
-        }
-
-        return true;
+        dfs(root);
+        return bal;
     }
 
-    private int helper(TreeNode node){
-        // base case -- return 0 if node is null (height of null node with previous node is 0)
-        if(node == null){
+    private int dfs(TreeNode node){
+        if(node==null){
             return 0;
         }
 
-        // calculate height of left subtree
-        int left_height = helper(node.left);
-        // calculate height of right subtree
-        int right_height = helper(node.right);
+        int left = dfs(node.left);
+        int right = dfs(node.right);
 
-        // return -1 if left subtree or right subtree is unbalanced
-        if(left_height==-1 || right_height==-1){
-            return -1;
+        if(Math.abs(left-right)>1){
+            bal = false;
         }
 
-        // return -1 if subtree height difference is more than 1, hence unbalanced
-        if(Math.abs(left_height-right_height) > 1){
-            return -1;
-        }
-
-        // return height of subtree with max of left_height, right_height + 1
-        return Math.max(left_height,right_height)+1;
+        return Math.max(left,right) + 1;
     }
 }
+
+// TC: O(n), visiting each node at most once
+// SC: O(h), h==binary tree --> max number of function calls stored on call stack is equal to height of tree
+// Algorithm:
+    // base case -- return 0 if node is null (height of null node with previous node is 0)
+    // we then calculate the max height of the left subtree and the max height of the right subtree
+    // when the height difference between left and right is more than 1, change bal to false
+    // return statement is most important, return max of left and right + 1 -- the +1 increments the count
