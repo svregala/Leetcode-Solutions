@@ -47,6 +47,7 @@ The posted solutions are for the following problems:
    42. Binary Search - #704
    43. Kth Largest Element in a Stream - #703
    44. Last Stone Weight - #1046
+   45. Min Cost Climbing Stairs - #746
 
 
    **MEDIUM Difficulty ---**
