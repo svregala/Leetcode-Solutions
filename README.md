@@ -48,6 +48,7 @@ The posted solutions are for the following problems:
    43. Kth Largest Element in a Stream - #703
    44. Last Stone Weight - #1046
    45. Min Cost Climbing Stairs - #746
+   46. Happy Number - #202
 
 
    **MEDIUM Difficulty ---**
