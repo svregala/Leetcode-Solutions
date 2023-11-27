@@ -26,6 +26,7 @@ class Solution {
          return true;
       }
       Collections.sort(intervals, new IntervalComp());
+      // OR instead we can override like this --> Collections.sort(intervals, (a,b) -> a.start-b.start)
 
       for(int i=0; i<intervals.size()-1; i++){
          if(intervals.get(i).end > intervals.get(i+1).start){
@@ -45,4 +46,5 @@ class Solution {
    }
 }
 // SORT based on the start value of each interval
-// TC: nlogn
+// TC: O(nlogn) because of sorting
+// SC: O(1) constant space
