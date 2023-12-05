@@ -14,7 +14,7 @@ class Solution {
 }
 
 /*
-- sort first, then compare each element with preivous element --> TC: O(nlogn), SC: O(1)
+- sort first, then compare each element with previous element --> TC: O(nlogn), SC: O(1)
 - hashmap with frequency count --> TC: O(n), SC: O(n)
 - XOR --> TC: O(n), SC: O(1)
     - We can use xor operation as it cancel out itself 
