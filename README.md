@@ -50,6 +50,7 @@ The posted solutions are for the following problems:
    45. Min Cost Climbing Stairs - #746
    46. Happy Number - #202
    47. Number of 1 Bits - #191
+   48. Counting Bits - #338
 
 
    **MEDIUM Difficulty ---**
