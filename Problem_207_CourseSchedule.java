@@ -28,7 +28,7 @@ class Solution {
          // so we have to manually iterate through every course and check if each course can be completed
       for(int i=0; i<numCourses; i++){
          if(!dfs(i)){
-               return false;
+            return false;
          }
       }
       return true;
@@ -51,7 +51,7 @@ class Solution {
       for(int item : prereqMap.get(course)){
          // if dfs is false --> if we find one course that CANNOT be completed, then we can return right away
          if(!dfs(item)){
-               return false; 
+            return false; 
          }
       }
 

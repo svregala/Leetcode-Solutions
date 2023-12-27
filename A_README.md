@@ -51,6 +51,7 @@ The posted solutions are for the following problems:
    46. Happy Number - #202
    47. Number of 1 Bits - #191
    48. Counting Bits - #338
+   49. Range Sum Query - Immutable - #303
 
 
    **MEDIUM Difficulty ---**
@@ -105,6 +106,8 @@ The posted solutions are for the following problems:
    49. Implement Trie (Prefix Tree) - #208
    50. Design Add and Search Words Data Structure - #211
    51. Top K Frequent Elements - #347
+   52. Range Sum Query - Mutable - #307
+   53. Course Schedule II - #210
 
 
    **HARD Difficulty ---**
