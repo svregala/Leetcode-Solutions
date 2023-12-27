@@ -108,6 +108,7 @@ The posted solutions are for the following problems:
    51. Top K Frequent Elements - #347
    52. Range Sum Query - Mutable - #307
    53. Course Schedule II - #210
+   54. Task Scheduler - #621
 
 
    **HARD Difficulty ---**
