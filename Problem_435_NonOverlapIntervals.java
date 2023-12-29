@@ -1,42 +1,31 @@
 /*
 Given an array of intervals intervals where intervals[i] = [starti, endi], 
 return the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping.
- */
+*/
 
 class Solution {
    public int eraseOverlapIntervals(int[][] intervals) {
-      if(intervals.length==0 || intervals.length==1){
+      // base case
+      if(intervals.length==1){
          return 0;
       }
 
       Arrays.sort(intervals, (a,b)->Integer.compare(a[1],b[1]));
-      int res = 0;
 
-      int[] fir = intervals[0];
-      int[] sec = intervals[1];
-      int i=1;
-
-      while(i<intervals.length){
-
-         if(i==intervals.length-1){
-            if(sec[0] < fir[1]){
-               res++;
-            }
-            return res;
+      int count = 0;
+      int left = 0;
+      int right = 1;
+      while(right<intervals.length){
+         if(intervals[left][1] > intervals[right][0]){
+            count++;
          }
-
-         if(sec[0] < fir[1]){
-            res++;
-            sec = intervals[i+1];
-         }else{
-            fir = sec;
-            sec = intervals[i+1];
+         else{
+            left=right;
          }
-
-         i++;
+         right++;
       }
 
-      return res;
+      return count;
    }
 }
 
