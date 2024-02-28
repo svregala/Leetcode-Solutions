@@ -4,24 +4,25 @@ An Anagram is a word or phrase formed by rearranging the letters of a different 
  */
 
 class Solution {
-   public List<List<String>> groupAnagrams(String[] strs) {
-      Map<String, List<String>> anagrams = new HashMap<>();
+public List<List<String>> groupAnagrams(String[] strs) {
 
-      for(String s : strs){
-         char[] s_arr = s.toCharArray();
-         Arrays.sort(s_arr);
+   Map<String, ArrayList<String>> m = new HashMap<>();
+   for(String s : strs){
+      char[] str = s.toCharArray();
+      Arrays.sort(str);
+      String key = new String(str);
 
-         String temp_str = new String(s_arr);
-         if(!anagrams.containsKey(temp_str)){
-            anagrams.put(temp_str, new ArrayList<>(Arrays.asList(s)));
-         }else{
-            anagrams.get(temp_str).add(s);
-         }
+      if(m.containsKey(key)){
+         m.get(key).add(s);
+      }else{
+         ArrayList<String> val = new ArrayList<>(Arrays.asList(s));
+         m.put(key, val);
       }
-
-      return new ArrayList<>(anagrams.values());
    }
+
+   return new ArrayList<List<String>>(m.values());
+}
 }
 
 // TC: O(n*mlogm) with n=length of string list, and m=length of longest string in list
-// SC: O(n)
+// SC: O(n) with n total elements in hashmap values
