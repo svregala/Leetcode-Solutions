@@ -3,36 +3,36 @@ Given an integer array nums and an integer k, return the k most frequent element
 */
 
 class Solution {
-   public int[] topKFrequent(int[] nums, int k) {
-      Map<Integer, Integer> freq = new HashMap<>();
-      List<Integer>[] arr_count = (List<Integer>[]) new List[nums.length+1];
+    public int[] topKFrequent(int[] nums, int k) {
+        Map<Integer, Integer> freq = new HashMap<>();
+        List<Integer>[] arr_count = (List<Integer>[]) new List[nums.length+1];
 
-      for(int n : nums){
-         freq.put(n, freq.getOrDefault(n, 0)+1);
-      }
+        for(int n : nums){
+            freq.put(n, freq.getOrDefault(n, 0)+1);
+        }
 
-      for (int i=0; i<nums.length+1; i++) {
-         arr_count[i] = new ArrayList<>();
-      }
+        for (int i=0; i<nums.length+1; i++) {
+            arr_count[i] = new ArrayList<>();
+        }
 
-      for(Map.Entry<Integer, Integer> entry : freq.entrySet()) {
-         arr_count[entry.getValue()].add(entry.getKey());
-      }
+        for(Map.Entry<Integer, Integer> entry : freq.entrySet()) {
+            arr_count[entry.getValue()].add(entry.getKey());
+        }
 
-      int[] res = new int[k];
-      int j=0;
-      for(int i=arr_count.length-1; i>0; i--){
-         for(int num : arr_count[i]){
-            res[j] = num;
-            j++;
-            if(j==k){
-               return res;
+        int[] res = new int[k];
+        int j=0;
+        for(int i=arr_count.length-1; i>0; i--){
+            for(int num : arr_count[i]){
+                res[j] = num;
+                j++;
+                if(j==k){
+                    return res;
+                }
             }
-         }
-      }
+        }
 
-      return res;
-   }
+        return res;
+    }
 }
 
 // Approach 1: sort by descending order of values, then add the top 2 most frequent elements --> O(nlogn)
