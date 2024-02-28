@@ -5,8 +5,8 @@ Given an integer array nums and an integer k, return the k most frequent element
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {
         Map<Integer, Integer> freq = new HashMap<>();
-        List<Integer>[] arr_count = (List<Integer>[]) new List[nums.length+1];
-
+        List<Integer> arr_count[] = new ArrayList[nums.length+1];
+        
         for(int n : nums){
             freq.put(n, freq.getOrDefault(n, 0)+1);
         }
