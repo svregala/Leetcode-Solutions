@@ -18,7 +18,7 @@ class Solution {
       return res;
    }
 }
-// TC: 2n ~ O(n), iterate throught nums array twice
+// TC: 2n ~ O(n), iterate through nums array twice
 // SC: O(n), result array
 
 /*
