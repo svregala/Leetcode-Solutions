@@ -5,6 +5,7 @@ Given an integer array nums and an integer k, return the k most frequent element
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {
         Map<Integer, Integer> freq = new HashMap<>();
+        // creates an array named arrCount where each element is a reference to an ArrayList<Integer>
         List<Integer> arr_count[] = new ArrayList[nums.length+1];
         
         for(int n : nums){
@@ -49,8 +50,11 @@ class Solution {
 // Approach 4: Bucket sort, i is the count and is mapped to values (the values are the numbers with the corresponding i count)
     // e.g. [1,1,1,2,2,3], k = 2
     // 0   1     2    3    4    5    6
-    // n [100]  [2]  [1]   []   []  []
-    // O(n) TC
+    // n  [3]  [2]  [1]   []   []  []
+    // Bucket sort -- have an array where the index i is the count and 
+            // the element at index i is an arraylist of all the numbers with i count
+    // TC: O(n), iterate through nums array
+    // SC: O(n), the bucket array
 
 
 /* APPROACH 3
