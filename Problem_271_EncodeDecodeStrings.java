@@ -51,3 +51,5 @@ public class Solution {
 
 
 // Encoder and Decoder are both O(n)
+// Encoder: TC is O(n), SC is O(1) not including result String
+// Decoder: TC is O(n), SC is O(1) not including result ArrayList

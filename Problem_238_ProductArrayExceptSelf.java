@@ -19,7 +19,7 @@ class Solution {
    }
 }
 // TC: 2n ~ O(n), iterate through nums array twice
-// SC: O(n), result array
+// SC: O(n), result array -- O(1) not including the result array
 
 /*
 BEFORE SPACE OPTIMIZATION:
