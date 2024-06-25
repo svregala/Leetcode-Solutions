@@ -10,32 +10,31 @@ class Solution {
       }
 
       Set<Integer> s = new HashSet<>();
-      for(int elem : nums){
-         s.add(elem);
+      for(int num:nums){
+         s.add(num);
       }
 
-      int res = 0;
+      int maxCount = 1;
       for(int n : nums){
          // check if start of sequence, AKA no left neighbor
          if(!s.contains(n-1)){
-            int length = 0;
+            int count = 1;
+            int next = n+1;
             // get each consecutive number and see if it exists in set
-            while(s.contains(n+length)){
-               length++;
+            while(s.contains(next)){
+               count++;
+               next+=1;
             }
-
-            res = Math.max(length, res);
+            maxCount = Math.max(maxCount, count);
          }
 
          // check if res is more than half of the nums size --> it means we already found the longest existing sequence
-         if(res > nums.length/2){
-            break;
+         if(maxCount>nums.length/2){
+            return maxCount;
          }
       }
-      
-      return res;
-      // TC: O(n)
-      // SC: O(n)
+
+      return maxCount;
    }
 }
 
