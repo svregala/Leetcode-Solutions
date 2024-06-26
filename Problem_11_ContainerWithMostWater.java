@@ -7,30 +7,44 @@ Notice that you may not slant the container.
 
 class Solution {
    public int maxArea(int[] height) {
-      // 2 pointer solution
-      int res = 0;
-      int left = 0;
-      int right = height.length-1;
+      int res=0;
+      int l=0;
+      int r=height.length-1;
 
-      while(left < right){
-         int min_height = Math.min(height[left], height[right]);
-         int curr_area = min_height*(right-left);
+      while(l<r){
+         int minHeight = Math.min(height[l], height[r]);
+         int width = r-l;
+         res = Math.max(res, minHeight*width);
 
-         if(res < curr_area){
-            res = curr_area;
+         while(l<r && height[l]<=minHeight){
+            l++;
          }
-
-         // only move left or right pointers --> move the pointer with smaller height because 
-         // we want to explore containers with a potential for larger areas
-         // AKA move the smaller height pointer because we want to always use a bigger height
-         // since we're exploring containers with BIGGER areas
-         if(height[left] < height[right]){
-            left++;
-         }else{
-            right--;
+         while(l<r && height[r]<=minHeight){
+            r--;
          }
       }
 
       return res;
    }
 }
+
+/*
+TC: O(n)
+SC: O(1)
+
+Make this even faster by shift l until height[l]>minHeight
+Similarly, shift r until height[r]>minHeight
+- because we only care about bigger heights
+
+if(height[l]<height[r]){
+   l++;
+}else{
+   r--;
+}
+^^ standard way of shifting
+
+// only move left or right pointers --> move the pointer with smaller height because 
+// we want to explore containers with a potential for larger areas
+// AKA move the smaller height pointer because we want to always use a bigger height
+// since we're exploring containers with BIGGER areas
+*/
