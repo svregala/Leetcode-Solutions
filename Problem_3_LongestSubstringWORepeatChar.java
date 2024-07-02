@@ -32,28 +32,34 @@ class Solution {
 // SC: O(n) -- string has unique letters
 
 
-// BEFORE REFINING ORIGINAL SOLUTION ---
-/*class Solution{
-   public int lengthOfLongestSubstring(String s){
-       HashSet<Character> set = new HashSet<>();
-       int max = 0;
-       int left = 0;
+/*class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        if(s.length() < 2){
+            return s.length();
+        }
 
-       for(int right=0; right<s.length(); right++){
-           if(!set.contains(s.charAt(right))){
-            set.add(s.charAt(right));
-            max = Math.max(max, right-left+1); // update max by taking max of current max or current gap between left and right
-           }else{
-            while(s.charAt(left) != s.charAt(right)){ // need this while loop and condition because of cases like "dvdf"
-                set.remove(s.charAt(left));
-                left++;
+        int res=0;
+        int l=0;
+        int r=1;
+        Set<Character> charSet = new HashSet<>();
+        charSet.add(s.charAt(l));
+        
+        while(r<s.length()){
+            while(l<r && charSet.contains(s.charAt(r))){
+                charSet.remove(s.charAt(l));
+                l++;
             }
-            //set.remove(s.charAt(left));
-            left++;
-            set.add(s.charAt(right));
-           }
-       }
+            charSet.add(s.charAt(r));
+            r++;
+            
+            res = Math.max(res, r-l);
+        }
 
-       return max;
-   }
+        return res;
+    }
 }*/
+
+/*
+TC: O(n), iterate through whole list
+SC: O(n), set data structure will have n elements if String has unique letters
+*/
